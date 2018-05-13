@@ -8,12 +8,8 @@ $(function(){
         var zweiZwei = $("#zweiZwei").val();
         var zweiDrei = $("#zweiDrei").val();
         
-        var eins = einsZwei * zweiDrei - einsDrei * zweiZwei;
-        var zwei = einsDrei * zweiEins - einsEins * zweiDrei;
-        var drei = einsEins * zweiZwei - einsZwei * zweiEins;
-
-        $("#ergebnis").html("Das Kreuzprodukt ist  "+ "<br>"+
-                                eins + "<br>"+ zwei+"<br>"+drei );
+        var ergebnis = einsEins*zweiEins+einsZwei*zweiZwei+einsDrei*zweiDrei;
+        $("#ergebnis").text("Das Skalarptodukt ist "+ergebnis);
     });
 
 });

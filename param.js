@@ -1,6 +1,9 @@
 $(function(){
-
+    
     $("#bestätigen").click(function(){
+        var stützEins = $("#stützEins").val();
+        var stützZwei = $("#stützZwei").val();
+        var stützDrei = $("#stützDrei").val();
         var einsEins = $("#einsEins").val();
         var einsZwei = $("#einsZwei").val();
         var einsDrei = $("#einsDrei").val();
@@ -12,8 +15,11 @@ $(function(){
         var zwei = einsDrei * zweiEins - einsEins * zweiDrei;
         var drei = einsEins * zweiZwei - einsZwei * zweiEins;
 
-        $("#ergebnis").html("Das Kreuzprodukt ist  "+ "<br>"+
-                                eins + "<br>"+ zwei+"<br>"+drei );
+        var konst = eins*stützEins+zwei*stützZwei+drei*stützDrei;
+        
+        $("#ergebnis").text("Die Koordinatengleichung der Parametergleichung lautet: "+eins+"x + "+zwei+"y + "+ drei+"z = "+konst);
+        
+        
     });
 
 });
