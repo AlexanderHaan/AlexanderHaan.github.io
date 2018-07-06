@@ -4,4 +4,4 @@ Das ist eine Website, die es ermöglicht schnell und einfach mathematische Vekto
 
 Bei Dezimalzahlen statt Kommas Punkte benutzen.
 
-Die Website kann man einsehen unter der Webadresse https://alexanderhaan.github.io/mathe .
+Die Website kann man einsehen unter der Webadresse https://alexanderhaan.github.io/Mathe/ .
